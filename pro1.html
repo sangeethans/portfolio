@@ -1,0 +1,181 @@
+<html>
+<head>
+    <title>project</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color:grey;
+        }
+
+        header {
+            background-color:black;
+            color: #fff;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative; 
+        }
+
+        .header-content h1 {
+            font-size: 2.5rem;
+        }
+
+        .profile-picture {
+            width: 100px; 
+            height: 100px;
+            border-radius: 75%;
+            object-fit: cover;
+            position: absolute; 
+            top: 75px; 
+            left: 75px; 
+        }
+
+        nav {
+            background-color:black;
+            color: #fff;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type:none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .section-content {
+            background-color:ivory;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .download-button {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .download-button:hover {
+            background-color:aqua;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color:black;
+            color: #fff;
+        }
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="profile.webp" alt="Your Profile Picture" class="profile-picture">
+            <h1>SangeethaCharles</h1>
+            <h4>STUDENT</h4>
+        </div>
+    </header>
+
+    <nav><hr>
+        <ul>
+            <li><a href="#about">About     </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li><a href="#details">Academic Qualifications     </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li><a href="#skills">Technical Proficiency    </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li><a href="#projects">Projects     </a>&nbsp;&nbsp;&nbsp;&nbsp;</li>
+            <li><a href="#resume">Resume     </a></li>
+        </ul>
+        <hr>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <h3>SANGEETHA</h3>
+            <p>South Street, Tiruchendur</p>
+            <p>thoothukudi, 628215</p>
+            <p>mob-9876543212</p>
+            <p>E-mail:sangeethans@gmail.com</p>
+        </div>
+    </section>
+
+    <section id="details">
+        <div class="section-content">
+            <h2>ACADEMIC QUALIFICATIONS</h2>
+            <p>B.Sc,ComputerScience</p>
+            <p>Govingammal Aditanar College for Women,Tiruchendur</p>
+            <p>2021-2024</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2>TECHNICAL PROFICIENCY</h2>
+            <ul>
+                <li>Programming Languages: Python,Java,javaScript</li><br>
+                <li>Database Management  : SQL, My SQL</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-content">
+            <h2>PROJECT</h2>
+            <ul>
+                <li><a href="https://docs.google.com/document/d/1NrlJZIAXzzHZ8QsN6jJFV095FxmhcceNKC0RWMAAaQM/edit">Digital Library</a></li>
+            </ul>
+            </div>
+    </section>
+    
+     <section id="resume">
+        <center>
+        <div class="section-content">
+            <h2>Resume</h2>
+            <a href="E:\project\mine.docx" class="download-button">Download CV</a>
+        </div>
+        </center>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 sangeethacharles</p>
+    </footer>
+        <script> 
+        alert("welcome to our website!!!")
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
+    
